@@ -4,7 +4,7 @@ import ActiveLink from '../common/ActiveLink';
 
 const Sidebar = () => {
 	return (
-		<aside className="p-5 border-r border-r-gray-200">
+		<aside className="p-5 border-r border-r-gray-200 bg-white">
 			<a href="/" className="font-bold text-3xl inline-block mb-5">
 				<span className="text-primary">A</span>cademy
 			</a>
