@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/common/ThemeProvider';
 import { manrope } from '@/utils';
 import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from 'next';
@@ -15,8 +16,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<ClerkProvider>
-			<html lang="en">
-				<body className={`${manrope.className}`}>{children}</body>
+			<html lang="en" suppressHydrationWarning>
+				<body className={`${manrope.className}`}>
+					<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+						{children}
+					</ThemeProvider>
+				</body>
 			</html>
 		</ClerkProvider>
 	);

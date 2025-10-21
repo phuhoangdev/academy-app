@@ -9,7 +9,7 @@ const courseInfo = [
 
 const CourseItem = () => {
 	return (
-		<div className="bg-white border border-gray-200 p-4 rounded-2xl">
+		<div className="bg-white dark:bg-grayDarker border border-gray-200 dark:border-opacity-10 p-4 rounded-2xl">
 			<Link href="#" className="block h-[180px] relative">
 				<Image
 					src="https://plus.unsplash.com/premium_photo-1756131994915-c92a65718df0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740"
@@ -24,8 +24,8 @@ const CourseItem = () => {
 				</span>
 			</Link>
 			<div className="pt-4">
-				<h3 className="font-bold text-lg mb-5">Khóa học NextJS Pro - Xây dựng E Learning System hoàn chỉnh</h3>
-				<div className="flex items-center justify-center gap-3 mb-5 text-sm text-gray-500">
+				<h3 className="font-bold text-lg mb-5 dark:text-gray-200">Khóa học NextJS Pro - Xây dựng E Learning System hoàn chỉnh</h3>
+				<div className="flex items-center justify-center gap-3 mb-5 text-sm text-gray-500 dark:text-grayDark">
 					{courseInfo.map((item, index) => (
 						<div key={index} className="flex items-center gap-1">
 							{item.icon('size-4')}
